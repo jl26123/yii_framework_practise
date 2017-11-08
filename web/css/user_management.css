@@ -1,0 +1,111 @@
+
+
+/* Enabled Box*/
+.inline-box-w50p{
+	display:inline-block;
+	width:45%;
+}
+
+/*Selection, input and password*/
+.user_management .select-style,
+.user_management .input-style,
+.user_management .password-style{
+	font-family: "Helvetica";
+	height: 1.5em;
+	color:grey;
+	text-align:center;
+	text-align: -moz-center; /*firefox*/
+    text-align: -webkit-center; /*safari, chrome*/
+	text-align-last: center;
+	-ms-text-align-last:center;
+	-moz-text-align-last: center; 
+	border:1px solid grey;
+}
+
+
+.input-style{
+	width:95%;
+}
+
+.select-style{
+	width:110%;
+}
+.password-style{
+	width:98.8%;
+	font-size: 1em;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+/*GROUP SELECTION*/ 
+
+.width-100{
+			width: 100%;
+			margin-top:1.5em;
+			margin-bottom:1.78em;
+			overflow:hidden;
+			border-bottom:1px solid grey;
+}
+.left-float-w50{
+	float:left;
+	width:50%;
+}
+
+.selection-size{
+	min-width:200px;
+	min-height:15em;
+	width:100%;
+}
+
+/*CREATE USER PANEL*/
+.close_create_user_pannel{
+			background-image: url('/images/unexpand.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			bottom: 0;
+			cursor: pointer;
+			height: 1.875em;
+			position: absolute;
+			right: 0;
+			width: 1.875em;
+			z-index: 11;
+}
+
+/*BUTTON*/
+.user-management-center-button{
+	display: flex;
+	justify-content: center;
+}
+
+.user-management-left-button{
+	float:left;
+}
+.user-management-right-button{
+	float:right;
+}
+.clean-float:after,
+.user-management-right-button:after,
+.user-management-left-button:after
+{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/*FIXED*/
+.m-b-10{
+	margin-bottom: 10px;
+}
+
+/*
+   INPUT WARNING
+*/
+.user-account-warning{
+    color:OrangeRed;
+    font-family: "Helvetica";
+    font-size:  .7em;
+    margin-left: 1%;
+    opacity:0.5;
+    display:none;
+    position:absolute;
+}
