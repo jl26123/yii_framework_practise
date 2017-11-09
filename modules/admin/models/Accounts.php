@@ -19,6 +19,7 @@ use Yii;
  */
 class Accounts extends \yii\db\ActiveRecord
 {
+  
     /**
      * @inheritdoc
      */
@@ -59,5 +60,9 @@ class Accounts extends \yii\db\ActiveRecord
             'last_name' => 'Last Name',
             'date_last_visited' => 'Date Last Visited',
         ];
+    }
+
+    public function getFullName(){
+        return $this->first_name." ".$this->last_name;
     }
 }
