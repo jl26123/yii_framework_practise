@@ -1,0 +1,178 @@
+@font-face {
+	font-family: "Helvetica";
+	font-style: normal; 
+	font-weight: normal;
+	src: url(fonts/HelveticaNeueLTCom-Lt.ttf) format("truetype");
+}
+@font-face {
+	font-family: "Helvetica";
+	font-weight: bold;
+	src: url(fonts/HelveticaNeueBold.ttf) format("truetype");
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-family: "Helvetica";
+	font-weight: normal;
+	outline: -webkit-focus-ring-color none;
+	
+}
+button,input.file_button {
+	position: relative;
+	color: #508cb4;
+	font-weight: bold;
+	padding: 2px 15px;
+	background-color: white;
+	border: 1px solid #508cb4;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	cursor: pointer;
+		
+}
+label {
+	color: #508cb4;
+	font-weight: bold;
+}
+h3 {
+	font-weight: bold;
+}
+.hide { display: none; }
+
+.content {
+	/*height: 698px;*/
+	width: 698px;
+	border: 1px solid black;
+	overflow: hidden;
+	position: relative;
+}
+
+.content .to_header {
+	padding: 10px;
+	background-color: #CCCCCC;
+	border-bottom: 1px solid black;
+	display: flex;
+}
+
+.content .to_header span:nth-child(1) {
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+	width: 35px;
+}
+
+.content .to_header .to_emails {
+	display: inline-block;
+	width: 520px;
+}
+
+.content .to_header .to_emails span {
+	font-size: medium;
+	font-weight: normal;
+	background-color: #508CB4;
+	color:	white;
+	border: 1px solid #508cb4;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	display: inline-block;
+	position: relative;
+	padding: 3px 20px 3px 3px;
+	margin: 2px;
+	width: auto;
+	cursor: pointer;
+}
+.content .to_header .to_emails span img {
+	position: absolute;
+	top: 9px;
+	right: 5px;
+}
+.content .to_header select {
+	margin-top: 2px;
+	height: 26px;
+	width: 200px;
+	border: 1px solid black;
+}
+.content .to_header button:last-child {
+	float: right;
+	height: 21px;
+}
+.content .to_header button:last-child img {
+	position: absolute;
+	top: 4px;
+	left: 6px;
+}
+.content .thy_body {
+	padding: 20px;
+	overflow: auto;
+	height: 607px;
+}
+.content .thy_fax_body {
+	padding: 20px;
+	overflow: auto;
+	height: 658px;
+}
+#subject_line {
+	width: 658px;
+	border: solid 1px black;
+	height: 32px;
+	padding: 5px;
+	margin: 5px 0 15px 0;
+}
+.content .thy_body .typin_box {
+	margin-bottom: 15px;
+}
+#email_input {
+	margin: 10px 0;
+	padding: 10px;
+	width: 658px;
+	height:200px;
+	border: 1px solid black;
+	resize: none;
+}
+.content .thy_body .thy_preview {
+	padding: 0px 20px;
+}
+.content .thy_body .thy_preview p,
+.content .thy_body .thy_preview h3 {
+	margin-top: 15px;
+}
+.content .thy_body .thy_preview .invoice_preview {
+	margin: 20px 0;
+}
+.content .thy_body .thy_preview .invoice_preview iframe {
+	width: 100%;
+	height: 720px;
+}
+.content .thy_fax_body .fax_invoice_preview iframe {
+	width: 100%;
+	height: 540px;
+}
+.content .thy_fax_body p {
+	margin: 15px 0;
+}
+.content .thy_fax_body button {
+	margin-top: 15px;
+}
+#email_output {
+	margin-top: 15px;
+}
+#email_output p {
+	margin-top: 0px;
+}
+.content .thy_body .tracking_text span {
+	display: inline-block;
+}
+.content .thy_body .tracking_text p span:first-child {
+	width: 250px;
+}
+.content .thy_body .signature_text { 
+	margin: 20px 0px;
+}
+button#send_invoice_btn {
+	margin-top: 30px;
+}

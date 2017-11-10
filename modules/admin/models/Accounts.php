@@ -65,4 +65,12 @@ class Accounts extends \yii\db\ActiveRecord
     public function getFullName(){
         return $this->first_name." ".$this->last_name;
     }
+
+    public function getAccountsSetting(){
+        return $this->hasOne(AccountsSettings::className(),['id'=>'id']);
+    }
+
+    public function getGroups(){
+        return $this->hasMany(AccountsUserGroupsEntry::className(),['account_id'=>'id']);
+    }
 }

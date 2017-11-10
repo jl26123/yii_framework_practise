@@ -4,6 +4,7 @@ namespace app\modules\admin\models;
 
 use Yii;
 
+
 /**
  * This is the model class for table "accounts_settings".
  *
@@ -16,7 +17,7 @@ use Yii;
  * @property string $phone_ip_address
  * @property integer $phone_extension
  */
-class AccountsSettings extends \app\modules\admin\models\Accounts
+class AccountsSettings extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc

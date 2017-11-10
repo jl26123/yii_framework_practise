@@ -22,8 +22,15 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/user_management.css',
+        'css/plugin/jquery-ui-lightness/jquery-ui-1.10.4.custom.css',
+        'css/plugin/jquery-fancybox/jquery.fancybox.css',
+        'css/plugin/jquery-impromptu/jquery-impromptu.css',
+        'css/plugin/jquery.jscrollpane.css',
+        'css/plugin/jquery.scrollbar.css',
+        'css/responsive.css',
     ];
     public $js = [
+        'js/admin/management.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

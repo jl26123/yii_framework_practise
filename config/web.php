@@ -48,14 +48,15 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => false,
+            'showScriptName' => false,//represent index.php
             'rules' => [
+                'management'=>"admin/management/index",
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];
