@@ -58,13 +58,23 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container col-sm-12 col-lg-6">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
+
+    <div class="container col-sm-12 col-lg-6">
+      <?php
+        $this->beginContent('@app/views/layouts/right.php');
+      ?>
+      <?php
+        $this->endContent();
+      ?>
+    </div>
+
 </div>
 
 <footer class="footer">
