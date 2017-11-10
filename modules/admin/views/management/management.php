@@ -38,8 +38,10 @@ AppAsset::register($this);
         				<select class="select-style" id="dash_full_name">
         					<option class="" value="">Please Select</option>
                             <?<?php foreach($accounts as $account){
-                                echo sprintf("<option value='%d'>%s</option>",$account->id,$account->first_name);
+                                echo sprintf("<option value='%d'>%s</option>",$account->id,$account->fullName);
+
                             }
+
                             ?>
 
         					
@@ -50,6 +52,7 @@ AppAsset::register($this);
         			<td>
         				Username:
                                         <span id = "dash_username_warning" class="user-account-warning">test</span>
+                                 
         			</td>
         			<td>
         				<input class="input-style input_warning1" type="text" id="dash_user_name" />
