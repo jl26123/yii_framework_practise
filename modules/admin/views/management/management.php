@@ -19,7 +19,7 @@ AppAsset::register($this);
         	<table>
         		<tr>
         			<td>
-        				Filter: 
+        				Filter:<!--  <?php var_dump($accounts[2]->groups); ?> -->
         			</td>
         			<td>
         				<select class="select-style" id="is_enable">

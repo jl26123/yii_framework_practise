@@ -1,0 +1,84 @@
+body {
+	background-color: #FFFFFF;
+}
+
+audio, embed, iframe, img, object, video {max-width: 100%;}
+
+a {
+	color: #2a8ea6;
+	font-weight: bold;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+table.style-list-hack tr td:nth-child(1) {
+	width: 4.5%;
+}
+table.style-list-hack tr td:nth-child(2) {
+	width: 12px;
+	vertical-align: top;
+}
+table.style-list-hack tr td:nth-child(3) {
+	width: 3px;
+}
+span.superscript {
+	vertical-align: super;
+}
+
+h4 {
+	padding: 0;
+    margin: 0;
+}
+
+.sn_background_container {
+	width: 100%;
+}
+.sn_background {
+	background-color: #FFFFFF;
+}
+
+.sn_content_container {
+	/* margin: 0 auto; */
+	max-width: 600px;
+	width: 100%;
+}
+.sn_content {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 1.5em 1em;
+}
+
+.sn_header_container {
+	padding: 0 0.5em 1.5em 0.5em;
+}
+.sn_body_container {
+	padding: 1.5em 0.5em;
+}
+.sn_body {
+	line-height: 1.5em;
+}
+.sn_body .btw {
+	margin: 0;
+}
+.sn_body .btw .tel {
+	color: inherit;
+	cursor: default;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.sn_footer_container {
+	padding: 1.5em 1em 0 0.5em;
+}
+.sn_footer {
+	font-size: 12px;
+}
+.sn_footer_phone table {
+	width: auto;
+}
+.sn_footer_phone table th {
+	font-weight: normal;
+	padding: 0 0.5em 0 0;
+}

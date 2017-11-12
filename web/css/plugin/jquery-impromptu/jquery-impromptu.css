@@ -1,0 +1,253 @@
+.jqifade{
+	position: absolute;
+	background-color: #777777;
+}
+.jqi{
+	width: 400px;
+	font-family: SinkNetFont, Helvetica, Arial, sans-serif;
+	position: absolute;
+	background-color: #ffffff;
+	text-align: left;
+	border: solid 1px #eeeeee;
+	border-radius: 6px;
+	padding: 7px;
+}
+.jqi .jqicontainer{
+}
+.jqi .jqiclose{
+	position: absolute;
+	top: 4px; right: -2px;
+	width: 18px;
+	cursor: pointer;
+	color: #bbbbbb;
+	font-weight: bold;
+}
+.jqi .jqiclose:hover{
+	color: #999999;
+}
+.jqi .jqistate{
+	background-color: #fff;
+}
+.jqi .jqititle{
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: solid 1px #eeeeee;
+}
+.jqi .jqimessage{
+	padding: 10px;
+	color: #444444;
+}
+.jqi .jqibuttons{
+	text-align: right;
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4;
+	background-color: #f4f4f4;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+.jqi .jqibuttons button{
+	border-radius: 0;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin: 0;
+	background-color: transparent;
+	font-weight: normal;
+	border: none;
+	border-left: solid 1px #e4e4e4;
+	color: #777;
+	font-weight: bold;
+}
+.jqi .jqibuttons button.jqidefaultbutton{
+	color: #489afe;
+}
+.jqi .jqibuttons button:hover,
+.jqi .jqibuttons button:focus{
+	color: #287ade;
+	outline: none;
+}
+.jqiwarning .jqi .jqibuttons{
+	background-color: #b95656;
+}
+
+/* sub states */
+.jqi .jqiparentstate::after{
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top:0;left:0;bottom:0;right:0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.jqi .jqisubstate{
+	position: absolute;
+	top:0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+.jqi .jqisubstate .jqibuttons button{
+	padding: 10px 18px;
+}
+
+/* arrows for tooltips/tours */
+.jqi .jqiarrow{ position: absolute; height: 0; width:0; line-height: 0; font-size: 0; border: solid 10px transparent;}
+
+.jqi .jqiarrowtl{ left: 10px; top: -20px; border-bottom-color: #ffffff; }
+.jqi .jqiarrowtc{ left: 50%; top: -20px; border-bottom-color: #ffffff; margin-left: -10px; }
+.jqi .jqiarrowtr{ right: 10px; top: -20px; border-bottom-color: #ffffff; }
+
+.jqi .jqiarrowbl{ left: 10px; bottom: -20px; border-top-color: #ffffff; }
+.jqi .jqiarrowbc{ left: 50%; bottom: -20px; border-top-color: #ffffff; margin-left: -10px; }
+.jqi .jqiarrowbr{ right: 10px; bottom: -20px; border-top-color: #ffffff; }
+
+.jqi .jqiarrowlt{ left: -20px; top: 10px; border-right-color: #ffffff; }
+.jqi .jqiarrowlm{ left: -20px; top: 50%; border-right-color: #ffffff; margin-top: -10px; }
+.jqi .jqiarrowlb{ left: -20px; bottom: 10px; border-right-color: #ffffff; }
+
+.jqi .jqiarrowrt{ right: -20px; top: 10px; border-left-color: #ffffff; }
+.jqi .jqiarrowrm{ right: -20px; top: 50%; border-left-color: #ffffff; margin-top: -10px; }
+.jqi .jqiarrowrb{ right: -20px; bottom: 10px; border-left-color: #ffffff; }
+
+
+
+
+
+.email_editablesfade{
+	position: absolute;
+	background-color: #777777;
+}
+.email_editables{
+	width: 800px;
+	font-family: SinkNetFont, Helvetica, Arial, sans-serif;
+	position: absolute;
+	background-color: #ffffff;
+	text-align: left;
+	border: solid 1px #eeeeee;
+	border-radius: 6px;
+	padding: 7px;
+}
+.email_editables .email_editablescontainer{
+}
+.email_editables .email_editablesclose{
+	position: absolute;
+	top: 4px; right: -2px;
+	width: 18px;
+	cursor: pointer;
+	color: #bbbbbb;
+	font-weight: bold;
+}
+.email_editables .email_editablesclose:hover{
+	color: #999999;
+}
+.email_editables .email_editablesstate{
+	background-color: #fff;
+}
+.email_editables .email_editablestitle{
+	padding: 5px 10px;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: solid 1px #eeeeee;
+}
+.email_editables .email_editablesmessage{
+	padding: 10px;
+	color: #444444;
+}
+.email_editables .email_editablesbuttons{
+	text-align: right;
+	margin: 0 -7px -7px -7px;
+	border-top: solid 1px #e4e4e4;
+	background-color: #f4f4f4;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+.email_editables .email_editablesbuttons button{
+	border-radius: 0;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin: 0;
+	background-color: transparent;
+	font-weight: normal;
+	border: none;
+	border-left: solid 1px #e4e4e4;
+	color: #777;
+	font-weight: bold;
+}
+.email_editables .email_editablesbuttons button.email_editablesdefaultbutton{
+	color: #489afe;
+}
+.email_editables .email_editablesbuttons button:hover,
+.email_editables .email_editablesbuttons button:focus{
+	color: #287ade;
+	outline: none;
+}
+.email_editableswarning .email_editables .email_editablesbuttons{
+	background-color: #b95656;
+}
+
+/* sub states */
+.email_editables .email_editablesparentstate::after{
+	background-color: #777;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	content: '';
+	position: absolute;
+	top:0;left:0;bottom:0;right:0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.email_editables .email_editablessubstate{
+	position: absolute;
+	top:0;
+	left: 20%;
+	width: 60%;
+	padding: 7px;
+	border: solid 1px #eeeeee;
+	border-top: none;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+}
+.email_editables .email_editablessubstate .email_editablesbuttons button{
+	padding: 10px 18px;
+}
+
+/* arrows for tooltips/tours */
+.email_editables .email_editablesarrow{ position: absolute; height: 0; width:0; line-height: 0; font-size: 0; border: solid 10px transparent;}
+
+.email_editables .email_editablesarrowtl{ left: 10px; top: -20px; border-bottom-color: #ffffff; }
+.email_editables .email_editablesarrowtc{ left: 50%; top: -20px; border-bottom-color: #ffffff; margin-left: -10px; }
+.email_editables .email_editablesarrowtr{ right: 10px; top: -20px; border-bottom-color: #ffffff; }
+
+.email_editables .email_editablesarrowbl{ left: 10px; bottom: -20px; border-top-color: #ffffff; }
+.email_editables .email_editablesarrowbc{ left: 50%; bottom: -20px; border-top-color: #ffffff; margin-left: -10px; }
+.email_editables .email_editablesarrowbr{ right: 10px; bottom: -20px; border-top-color: #ffffff; }
+
+.email_editables .email_editablesarrowlt{ left: -20px; top: 10px; border-right-color: #ffffff; }
+.email_editables .email_editablesarrowlm{ left: -20px; top: 50%; border-right-color: #ffffff; margin-top: -10px; }
+.email_editables .email_editablesarrowlb{ left: -20px; bottom: 10px; border-right-color: #ffffff; }
+
+.email_editables .email_editablesarrowrt{ right: -20px; top: 10px; border-left-color: #ffffff; }
+.email_editables .email_editablesarrowrm{ right: -20px; top: 50%; border-left-color: #ffffff; margin-top: -10px; }
+.email_editables .email_editablesarrowrb{ right: -20px; bottom: 10px; border-left-color: #ffffff; }
+
+/* Doug Custom */
+.email_editablesmessage textarea {
+	width: 48%;
+	height: 4.7em;
+}
+.email_editablesmessage div.middle-hyphen {
+    margin-top: 1.9em;
+    display: inline-block;
+}

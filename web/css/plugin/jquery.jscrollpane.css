@@ -1,0 +1,163 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+.jspScrollable {
+	outline: -webkit-focus-ring-color none;
+}
+ .jspContainer {
+	width: 95%;
+}
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 15px;
+	width: 8px;
+	height: 100%;
+}
+div.recent_updates_full div.full_recent_updates .jspVerticalBar {
+	right: 83px;
+	width: 16px;
+}
+
+div.full_terms_container .jspVerticalBar,
+div.orders_list .jspVerticalBar,
+div.sales_order_lineitem .jspVerticalBar {
+	right: 0px;
+	width: 16px;
+}
+div.details_left div.container .jspVerticalBar {
+	right: 10px;
+	width: 16px;
+}
+div.task_form_box .jspVerticalBar {
+	right: 27px;
+	width: 16px;
+}
+div.rma-right div.rma-scroll-container .jspVerticalBar {
+	width: 16px;
+	right: 30px;
+}
+div.recent_updates .jspVerticalBar,
+div.rma_left div.scroll_container .jspVerticalBar {
+	right: 0px;
+}
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspCap
+{
+	display: block;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+.jspVerticalBar .jspCap
+{
+	height: 20px;
+}
+div.recent_updates_full div.full_recent_updates .jspVerticalBar .jspCap { 
+	height: 20px;
+}
+div.full_terms_container .jspVerticalBar .jspCap{
+	height: 40px;
+}
+div.recent_updates .jspVerticalBar .jspCap {
+	height: 5px;
+}
+.jspTrack
+{
+	background: #414042;
+	-moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #bcbec0;
+	-moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

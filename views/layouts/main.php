@@ -8,9 +8,9 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
+/*use app\assets\AppAsset;*/
 
-AppAsset::register($this);
+/*AppAsset::register($this);*/
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -20,6 +20,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
+    <link rel="shortcut icon" type="image/x-icon" href="/yii_basic/web/images/favicon.ico" />
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
@@ -28,7 +29,7 @@ AppAsset::register($this);
 
 <div class="wrap">
     <?php
-    NavBar::begin([
+   /* NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
@@ -55,10 +56,10 @@ AppAsset::register($this);
             )
         ],
     ]);
-    NavBar::end();
+    NavBar::end();*/
     ?>
 
-    <div class="container col-sm-12 col-lg-6">
+    <div class="container col-sm-12 col-lg-12">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
@@ -66,24 +67,24 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 
-    <div class="container col-sm-12 col-lg-6">
+  <!--   <div class="container col-sm-12 col-lg-6">
       <?php
-        $this->beginContent('@app/views/layouts/right.php');
+        //$this->beginContent('@app/views/layouts/right.php');
       ?>
       <?php
-        $this->endContent();
+       // $this->endContent();
       ?>
-    </div>
+    </div> -->
 
 </div>
 
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
-</footer>
+</footer> -->
 
 <?php $this->endBody() ?>
 </body>
